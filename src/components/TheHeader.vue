@@ -1,5 +1,5 @@
 <script setup>
-import BaseButton from '@/components/base/BaseButton.vue'
+import BaseButton from '@/components/base/MyButton.vue'
 import HeaderNav from '@/components/base/HeaderNav.vue'
 
 const navLinks = [
