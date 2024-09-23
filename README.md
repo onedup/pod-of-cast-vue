@@ -33,3 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Figma
+
+[link](<https://www.figma.com/design/ti67pbSTzDEUT5NxFrB5cM/PodOfCast-(Copy)?node-id=301-25&node-type=&t=KN8Wb4sDhTVciPki-0>)
