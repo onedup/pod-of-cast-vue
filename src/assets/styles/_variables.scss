@@ -2,7 +2,19 @@
   --font-family: "Montserrat Alternates", sans-serif;
   --second-family: "Roboto", sans-serif;
 
+  --content-width: 1160px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --transition-time: 0.2s;
+
   // colors
 
-
+  --color-black: #000;
+  --color-white: #fff;
+  --davys-grey: #4d4d4d;
+  --color-vermillion: #cd4631;
+  --pewter-blue: #81adc8;
+  --champagne: #f7ede8;
+  --alice-blue: #edf3f7;
 }
