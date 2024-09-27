@@ -14,7 +14,6 @@ defineProps({
         <a :href="link.url" :class="['nav__link', link.subLinks.length ? 'nav__link--drop' : '']">{{
           link.name
         }}</a>
-        <!-- Check if the link has subLinks -->
         <ul
           v-if="link.subLinks.length"
           class="list-reset nav__list nav__list--dropdown dropdown-list"

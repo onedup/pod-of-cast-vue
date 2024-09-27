@@ -38,6 +38,7 @@ const navLinks = [
 
 <style lang="scss" scoped>
 .header {
+  padding: 24px 0;
   &__container {
     display: flex;
     align-items: center;
