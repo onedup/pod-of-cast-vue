@@ -1,5 +1,5 @@
 <script setup>
-import BaseButton from '@/components/base/MyButton.vue'
+import BaseButton from '@/components/base/BaseButton.vue'
 import HeaderNav from '@/components/base/HeaderNav.vue'
 
 const navLinks = [
@@ -29,8 +29,8 @@ const navLinks = [
       </RouterLink>
       <HeaderNav :nav-links="navLinks" />
       <div class="header__btns">
-        <BaseButton text="RECENT EPISODES" size="m" variant="stroke" :is-shadow="false" />
-        <BaseButton text="subscribe" size="m" variant="fill" />
+        <BaseButton size="m" variant="stroke" :is-shadow="false">RECENT EPISODES</BaseButton>
+        <BaseButton size="m" variant="fill">subscribe</BaseButton>
       </div>
     </div>
   </header>
