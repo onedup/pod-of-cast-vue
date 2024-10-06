@@ -1,6 +1,6 @@
 <script setup>
 import BaseButton from '@/components/base/BaseButton.vue'
-import HeaderNav from '@/components/base/HeaderNav.vue'
+import BaseNav from '@/components/base/BaseNav.vue'
 
 const navLinks = [
   {
@@ -27,7 +27,7 @@ const navLinks = [
       <RouterLink to="/">
         <img src="@/assets/images/logo.svg" alt="logo" />
       </RouterLink>
-      <HeaderNav :nav-links="navLinks" />
+      <BaseNav :nav-links="navLinks" />
       <div class="header__btns">
         <BaseButton size="m" variant="stroke" :is-shadow="false">RECENT EPISODES</BaseButton>
         <BaseButton size="m" variant="fill">subscribe</BaseButton>
