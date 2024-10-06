@@ -1,3 +1,7 @@
-<script setup></script>
+<script setup>
+import BlockHomeHero from '@/components/blocks/BlockHomeHero.vue'
+</script>
 
-<template></template>
+<template>
+  <BlockHomeHero />
+</template>
