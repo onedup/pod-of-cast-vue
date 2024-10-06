@@ -1,4 +1,5 @@
 <script setup>
+import BaseContainer from '@/components/base/BaseContainer.vue'
 import BaseButton from '@/components/base/BaseButton.vue'
 import BaseNav from '@/components/base/BaseNav.vue'
 
@@ -23,7 +24,7 @@ const navLinks = [
 
 <template>
   <header class="header">
-    <div class="container header__container">
+    <BaseContainer class="header__container">
       <RouterLink to="/">
         <img src="@/assets/images/logo.svg" alt="logo" />
       </RouterLink>
@@ -32,7 +33,7 @@ const navLinks = [
         <BaseButton size="m" variant="stroke" :is-shadow="false">RECENT EPISODES</BaseButton>
         <BaseButton size="m" variant="fill">subscribe</BaseButton>
       </div>
-    </div>
+    </BaseContainer>
   </header>
 </template>
 
