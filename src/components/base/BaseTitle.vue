@@ -13,10 +13,15 @@
 
 <style scoped lang="scss">
 .title {
-  color: var(--title-color, #000); // Основной цвет текста
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #000;
 
   &--highlight {
-    color: var(--highlight-color, #ff4500); // Цвет для выделенного текста
+    color: var(--color-vermillion);
   }
 }
 </style>

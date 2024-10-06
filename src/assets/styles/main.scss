@@ -92,16 +92,3 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
-
-.title {
-  font-weight: 700;
-  font-size: 6rem;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: #000;
-
-  &--highlight {
-    color: var(--color-vermillion);
-  }
-}
