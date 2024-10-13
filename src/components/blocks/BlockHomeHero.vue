@@ -1,12 +1,21 @@
 <script setup>
+import BaseContainer from '@/components/base/BaseContainer.vue'
 import BaseDisplayTitle from '@/components/base/BaseDisplayTitle.vue'
+import BaseText from '@/components/base/BaseText.vue'
+import BaseButton from '@/components/base/BaseButton.vue'
 </script>
 
 <template>
   <section class="hero">
-    <BaseDisplayTitle class="hero__display-title centered"
-      >Your Daily <template v-slot:highlight>Podcast</template></BaseDisplayTitle
-    >
+    <BaseContainer class="hero__container">
+      <BaseDisplayTitle class="hero__display-title centered"
+        >Your Daily <template v-slot:highlight>Podcast</template></BaseDisplayTitle
+      >
+      <BaseText class="hero__text centered" tagName="p" size="l"
+        >We cover all kinds of categories and a weekly special guest.</BaseText
+      >
+      <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
+    </BaseContainer>
   </section>
 </template>
 
@@ -14,11 +23,25 @@ import BaseDisplayTitle from '@/components/base/BaseDisplayTitle.vue'
 .hero {
   background-color: var(--champagne);
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__display-title {
-    margin: 0 auto;
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
     max-width: 33.75rem;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    max-width: 18.75rem;
+  }
+
+  &__btn {
+    margin-bottom: 9rem;
   }
 }
 </style>

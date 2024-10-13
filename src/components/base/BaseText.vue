@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <tagName :class="[`text`, `text--${props.size}`, bold ? `text--bold` : '']">
+  <tagName :class="[`text`, `text--${size}`, bold ? `text--bold` : '']">
     <slot></slot>
   </tagName>
 </template>
