@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <svg
-    v-if="size === 'small'"
+    v-if="size === 's'"
     width="24"
     height="24"
     viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ defineProps({
   </svg>
 
   <svg
-    v-else-if="size === 'big'"
+    v-else-if="size === 'l'"
     width="199"
     height="36"
     viewBox="0 0 199 36"
