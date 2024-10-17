@@ -32,27 +32,27 @@ const splideOptions = {
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
       >
-      <SplideSlide class="hero-swiper__slide"
+      <SplideSlide
         ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
       >
-      <SplideSlide class="hero-swiper__slide"
+      <SplideSlide
         ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
       >
-      <SplideSlide class="hero-swiper__slide"
+      <SplideSlide
         ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
       >
-      <SplideSlide class="hero-swiper__slide"
+      <SplideSlide
         ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
       >
-      <SplideSlide class="hero-swiper__slide"
+      <SplideSlide
         ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
           >Perplexed Mind</BasePodcastCard
         ></SplideSlide
