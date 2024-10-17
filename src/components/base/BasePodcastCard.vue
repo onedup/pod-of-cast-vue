@@ -1,7 +1,7 @@
 <script setup>
-import BaseSpotifyIcon from '@/components/base/BaseSpotifyIcon.vue'
-import BaseGooglePodcastIcon from '@/components/base/BaseGooglePodcastIcon.vue'
-import BaseYouTubeIcon from '@/components/base/BaseYouTubeIcon.vue'
+import IconSpotify from '@/components/icons/IconSpotify.vue'
+import IconGooglePodcast from '@/components/icons/IconGooglePodcast.vue'
+import IconYouTube from '@/components/icons/IconYouTube.vue'
 defineProps({
   shadow: Boolean,
   size: {
@@ -23,13 +23,13 @@ defineProps({
     <div class="podcast-card__icons">
       <ul class="list-reset podcast-card__icons-list">
         <li class="podcast-card__icons-item">
-          <BaseGooglePodcastIcon size="s" />
+          <IconGooglePodcast size="s" />
         </li>
         <li class="podcast-card__icons-item">
-          <BaseSpotifyIcon size="s" />
+          <IconSpotify size="s" />
         </li>
         <li class="podcast-card__icons-item">
-          <BaseYouTubeIcon size="s" />
+          <IconYouTube size="s" />
         </li>
       </ul>
     </div>

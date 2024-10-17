@@ -3,6 +3,16 @@ import BaseContainer from '@/components/base/BaseContainer.vue'
 import BaseDisplayTitle from '@/components/base/BaseDisplayTitle.vue'
 import BaseText from '@/components/base/BaseText.vue'
 import BaseButton from '@/components/base/BaseButton.vue'
+import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
+
+const splideOptions = {
+  gap: 20,
+  autoWidth: true,
+  type: 'loop',
+  focus: 'center',
+  pagination: false,
+  arrows: false
+}
 </script>
 
 <template>
@@ -16,6 +26,38 @@ import BaseButton from '@/components/base/BaseButton.vue'
       >
       <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
     </BaseContainer>
+    <Splide :options="splideOptions">
+      <SplideSlide
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+      <SplideSlide class="hero-swiper__slide"
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+      <SplideSlide class="hero-swiper__slide"
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+      <SplideSlide class="hero-swiper__slide"
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+      <SplideSlide class="hero-swiper__slide"
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+      <SplideSlide class="hero-swiper__slide"
+        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          >Perplexed Mind</BasePodcastCard
+        ></SplideSlide
+      >
+    </Splide>
   </section>
 </template>
 
