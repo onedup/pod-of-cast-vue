@@ -4,12 +4,17 @@ import BaseDisplayTitle from '@/components/base/BaseDisplayTitle.vue'
 import BaseText from '@/components/base/BaseText.vue'
 import BaseButton from '@/components/base/BaseButton.vue'
 import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
+import BaseSupportedBy from '@/components/base/BaseSupportedBy.vue'
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 
 const splideOptions = {
-  gap: 20,
+  gap: '1.25rem',
   autoWidth: true,
   type: 'loop',
   focus: 'center',
+  autoScroll: {
+    speed: 2
+  },
   pagination: false,
   arrows: false
 }
@@ -25,39 +30,40 @@ const splideOptions = {
         >We cover all kinds of categories and a weekly special guest.</BaseText
       >
       <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
+      <Splide :options="splideOptions" :extensions="{ AutoScroll }" class="hero__slider">
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+            >Perplexed Mind</BasePodcastCard
+          ></SplideSlide
+        >
+      </Splide>
+      <BaseSupportedBy class="hero__supported" />
     </BaseContainer>
-    <Splide :options="splideOptions">
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-      <SplideSlide
-        ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
-          >Perplexed Mind</BasePodcastCard
-        ></SplideSlide
-      >
-    </Splide>
   </section>
 </template>
 
@@ -84,6 +90,14 @@ const splideOptions = {
 
   &__btn {
     margin-bottom: 9rem;
+  }
+
+  &__slider {
+    margin-bottom: 7.5rem;
+  }
+
+  &__supported {
+    margin-bottom: 186px;
   }
 }
 </style>
