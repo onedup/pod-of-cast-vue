@@ -1,4 +1,5 @@
 <script setup>
+import BaseText from '@/components/base/BaseText.vue'
 defineProps({
   navLinks: {
     type: Array,
@@ -11,15 +12,22 @@ defineProps({
   <nav class="nav">
     <ul class="list-reset nav__list">
       <li v-for="link in navLinks" :key="link.url" class="nav__item">
-        <a :href="link.url" :class="['nav__link', link.subLinks.length ? 'nav__link--drop' : '']">{{
-          link.name
-        }}</a>
+        <BaseText
+          tag-name="a"
+          size="l"
+          bold
+          :href="link.url"
+          :class="['nav__link', link.subLinks.length ? 'nav__link--drop' : '']"
+          >{{ link.name }}</BaseText
+        >
         <ul
           v-if="link.subLinks.length"
           class="list-reset nav__list nav__list--dropdown dropdown-list"
         >
           <li v-for="subLink in link.subLinks" :key="subLink.url" class="dropdown-list__item">
-            <a :href="subLink.url" class="dropdown-list__link">{{ subLink.name }}</a>
+            <BaseText tag-name="a" size="l" bold :href="subLink.url" class="dropdown-list__link">{{
+              subLink.name
+            }}</BaseText>
           </li>
         </ul>
       </li>
@@ -52,24 +60,50 @@ defineProps({
   &__item {
     position: relative;
 
-    &:hover .nav__list--dropdown {
-      visibility: visible;
-      opacity: 1;
-      transition:
-        var(--transition-time) visibility ease,
-        var(--transition-time) opacity ease;
+    &:hover {
+      .nav__list--dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition:
+          var(--transition-time) visibility ease,
+          var(--transition-time) opacity ease;
+      }
+      .nav__link--drop::after {
+        transform: rotate(180deg);
+      }
     }
   }
 
   &__link {
+    position: relative;
     color: inherit;
 
+    &:hover::before {
+      transition: width 0.2s ease;
+      width: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 4px;
+      background-color: currentColor;
+      transition: width 0.2s ease;
+    }
+
     &--drop {
+      &::before {
+        background-color: transparent;
+      }
+
       &::after {
         content: '';
         display: inline-block;
         margin-left: 4px;
-        // position: absolute;
         background-image: url('@/assets/images/arrow-down.svg');
         background-size: cover;
         background-position: center;
@@ -78,15 +112,13 @@ defineProps({
         height: 1rem;
         transition: var(--transition-time) transform ease;
       }
-
-      &:hover::after {
-        transform: rotate(180deg);
-      }
     }
   }
 }
 
 .dropdown-list {
+  border-radius: 5px;
+  background-color: #fcf8f6;
   &__item:not(:last-child) {
     margin-bottom: 10px;
   }
