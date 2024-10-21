@@ -5,6 +5,8 @@ import BaseText from '@/components/base/BaseText.vue'
 import BaseButton from '@/components/base/BaseButton.vue'
 import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
 import BaseSupportedBy from '@/components/base/BaseSupportedBy.vue'
+import IconSpiralWickDecor from '@/components/icons/IconSpiralWickDecor.vue'
+import IconStarsDecor from '@/components/icons/IconStarsDecor.vue'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 
 const splideOptions = {
@@ -63,6 +65,8 @@ const splideOptions = {
         >
       </Splide>
       <BaseSupportedBy class="hero__supported" />
+      <IconSpiralWickDecor class="hero__decor1" :is-animation="true" />
+      <IconStarsDecor class="hero__decor2" :is-animation="true" />
     </BaseContainer>
   </section>
 </template>
@@ -70,16 +74,19 @@ const splideOptions = {
 <style scoped lang="scss">
 .hero {
   background-color: var(--champagne);
+  overflow: hidden;
 
   &__container {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   &__display-title {
-    padding-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding-top: 2rem;
+    margin-bottom: 1.625rem;
     max-width: 33.75rem;
   }
 
@@ -89,7 +96,7 @@ const splideOptions = {
   }
 
   &__btn {
-    margin-bottom: 9rem;
+    margin-bottom: 7.5rem;
   }
 
   &__slider {
@@ -97,7 +104,18 @@ const splideOptions = {
   }
 
   &__supported {
-    margin-bottom: 186px;
+    margin-bottom: 8.5rem;
+  }
+
+  &__decor1 {
+    position: absolute;
+    top: -60px;
+    left: -428px;
+  }
+  &__decor2 {
+    position: absolute;
+    top: 105px;
+    right: -64px;
   }
 }
 </style>
