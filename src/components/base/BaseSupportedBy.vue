@@ -7,10 +7,12 @@ import BaseTitle from '@/components/base/BaseTitle.vue'
 
 <template>
   <div class="supported-by">
-    <BaseTitle tagName="span" size="h3" line-height="140" bold>Supported by:</BaseTitle>
-    <IconSpotify size="l" />
-    <IconGooglePodcast size="l" />
-    <IconYouTube size="l" />
+    <BaseTitle tag-name="span" size="h3" line-height="140" bold>Supported by:</BaseTitle>
+    <div class="supported-by__icons">
+      <IconSpotify size="l" />
+      <IconGooglePodcast size="l" />
+      <IconYouTube size="l" />
+    </div>
   </div>
 </template>
 
@@ -24,5 +26,10 @@ import BaseTitle from '@/components/base/BaseTitle.vue'
   border-top: 0.125rem solid var(--davys-grey);
   border-bottom: 0.125rem solid var(--davys-grey);
   width: 100%;
+
+  &__icons {
+    display: flex;
+    gap: 8.25rem;
+  }
 }
 </style>
