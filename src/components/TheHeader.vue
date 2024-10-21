@@ -28,7 +28,7 @@ const navLinks = [
       <RouterLink to="/">
         <img src="@/assets/images/logo.svg" alt="logo" />
       </RouterLink>
-      <BaseNav :nav-links="navLinks" />
+      <BaseNav :nav-links="navLinks" class="header__nav" />
       <div class="header__btns">
         <BaseButton size="m" variant="stroke" :is-shadow="false">RECENT EPISODES</BaseButton>
         <BaseButton size="m" variant="fill">subscribe</BaseButton>
@@ -46,6 +46,10 @@ const navLinks = [
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__nav {
+    margin-left: -11.25rem;
   }
 
   &__btns {
