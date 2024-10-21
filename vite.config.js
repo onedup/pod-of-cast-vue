@@ -20,5 +20,6 @@ export default defineConfig({
         `
       }
     }
-  }
+  },
+  base: '/pod-of-cast-vue/'
 })
