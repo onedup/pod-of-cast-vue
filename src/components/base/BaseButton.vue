@@ -43,6 +43,12 @@ defineProps({
   &--fill {
     background-color: var(--color-black);
     color: var(--color-white);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--pewter-blue);
+      }
+    }
   }
 
   &--stroke {
@@ -74,6 +80,7 @@ defineProps({
   &--shadow {
     box-shadow: 0.1875rem 0.1875rem 0 0 rgba(0, 0, 0, 0.25);
     transition:
+      var(--transition-time) color,
       0.05s transform,
       0.05s box-shadow;
 
