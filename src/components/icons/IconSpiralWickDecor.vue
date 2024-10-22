@@ -7,6 +7,7 @@ defineProps({
 
 <template>
   <svg
+    class="wick-icon"
     width="630"
     height="593"
     viewBox="0 0 630 593"
@@ -38,6 +39,11 @@ defineProps({
     transform: rotate(-30deg);
     fill: #ff6f61;
   }
+}
+
+.wick-icon {
+  transform: translateZ(0);
+  z-index: -1;
 }
 
 .spark {
