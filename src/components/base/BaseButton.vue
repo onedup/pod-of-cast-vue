@@ -46,7 +46,7 @@ defineProps({
   }
 
   &--stroke {
-    border: 0.125rem solid #000;
+    border: var(--btn-border-width) solid #000;
     background-color: transparent;
     color: var(--color-black);
     transition:
@@ -63,11 +63,11 @@ defineProps({
 
     // Adjust padding to compensate for the added border
     &.btn--m {
-      padding: calc(0.75rem - 0.125rem) calc(1.5rem - 0.125rem);
+      padding: calc(0.75rem - var(--btn-border-width)) calc(1.5rem - var(--btn-border-width));
     }
 
     &.btn--l {
-      padding: calc(1.5rem - 0.125rem) calc(3rem - 0.125rem);
+      padding: calc(1.5rem - var(--btn-border-width)) calc(3rem - var(--btn-border-width));
     }
   }
 

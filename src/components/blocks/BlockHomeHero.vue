@@ -7,6 +7,7 @@ import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
 import BaseSupportedBy from '@/components/base/BaseSupportedBy.vue'
 import IconSpiralWickDecor from '@/components/icons/IconSpiralWickDecor.vue'
 import IconStarsDecor from '@/components/icons/IconStarsDecor.vue'
+import coverImage from '@/assets/images/cover.jpg'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 
 const splideOptions = {
@@ -15,7 +16,7 @@ const splideOptions = {
   type: 'loop',
   focus: 'center',
   autoScroll: {
-    speed: 2
+    speed: 1
   },
   pagination: false,
   arrows: false
@@ -34,32 +35,32 @@ const splideOptions = {
       <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
       <Splide :options="splideOptions" :extensions="{ AutoScroll }" class="hero__slider">
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" backgroundImage="src/assets/images/cover.jpg"
+          ><BasePodcastCard size="m" :background-image="coverImage"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
