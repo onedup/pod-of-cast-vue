@@ -29,7 +29,7 @@ const splideOptions = {
       <BaseDisplayTitle class="hero__display-title centered"
         >Your Daily <template v-slot:highlight>Podcast</template></BaseDisplayTitle
       >
-      <BaseText class="hero__text centered" tagName="p" size="l"
+      <BaseText class="hero__text centered" :tag-name="p" size="l"
         >We cover all kinds of categories and a weekly special guest.</BaseText
       >
       <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
