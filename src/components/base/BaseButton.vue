@@ -67,6 +67,13 @@ defineProps({
       // Move down and shrink slightly
     }
 
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--color-vermillion);
+        border-color: var(--color-vermillion);
+      }
+    }
+
     // Adjust padding to compensate for the added border
     &.btn--m {
       padding: calc(0.75rem - var(--btn-border-width)) calc(1.5rem - var(--btn-border-width));
@@ -80,7 +87,7 @@ defineProps({
   &--shadow {
     box-shadow: 0.1875rem 0.1875rem 0 0 rgba(0, 0, 0, 0.25);
     transition:
-      var(--transition-time) color,
+      var(--transition-time) color ease,
       0.05s transform,
       0.05s box-shadow;
 
