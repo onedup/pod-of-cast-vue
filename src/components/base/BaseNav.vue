@@ -104,7 +104,7 @@ defineProps({
         content: '';
         display: inline-block;
         margin-left: 4px;
-        background-image: url('@/assets/images/arrow-down.svg');
+        background-image: url('/__spritemap#sprite-arrow-down');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
