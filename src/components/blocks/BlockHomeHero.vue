@@ -7,7 +7,6 @@ import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
 import BaseSupportedBy from '@/components/base/BaseSupportedBy.vue'
 import IconSpiralWickDecor from '@/components/icons/IconSpiralWickDecor.vue'
 import IconStarsDecor from '@/components/icons/IconStarsDecor.vue'
-import coverImage from '@/assets/images/cover.jpg'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 
 const splideOptions = {
@@ -35,33 +34,34 @@ const splideOptions = {
       <BaseButton class="hero__btn" size="l">SUBSCRIBE</BaseButton>
       <Splide :options="splideOptions" :extensions="{ AutoScroll }" class="hero__slider">
         <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
+          ><BasePodcastCard
+            size="m"
+            :background-image="'src/assets/images/shows/tesla-autopilot.jpg'"
+            >Tesla Autopilot</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard
+            size="m"
+            :background-image="'src/assets/images/shows/self-confidence.jpg'"
+            >Self–confidence</BasePodcastCard
+          ></SplideSlide
+        >
+        <SplideSlide
+          ><BasePodcastCard
+            size="m"
+            :background-image="'src/assets/images/shows/perplexed-mind.jpg'"
             >Perplexed Mind</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
-            >Perplexed Mind</BasePodcastCard
+          ><BasePodcastCard size="m" :background-image="'src/assets/images/shows/womens-rights.jpg'"
+            >Women’s Rights</BasePodcastCard
           ></SplideSlide
         >
         <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
-            >Perplexed Mind</BasePodcastCard
-          ></SplideSlide
-        >
-        <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
-            >Perplexed Mind</BasePodcastCard
-          ></SplideSlide
-        >
-        <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
-            >Perplexed Mind</BasePodcastCard
-          ></SplideSlide
-        >
-        <SplideSlide
-          ><BasePodcastCard size="m" :background-image="coverImage"
-            >Perplexed Mind</BasePodcastCard
+          ><BasePodcastCard size="m" :background-image="'src/assets/images/shows/social-class.jpg'"
+            >Social Class</BasePodcastCard
           ></SplideSlide
         >
       </Splide>
