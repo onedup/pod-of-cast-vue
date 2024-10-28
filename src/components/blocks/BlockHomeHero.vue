@@ -7,6 +7,8 @@ import BasePodcastCard from '@/components/base/BasePodcastCard.vue'
 import BaseSupportedBy from '@/components/base/BaseSupportedBy.vue'
 import IconSpiralWickDecor from '@/components/icons/IconSpiralWickDecor.vue'
 import IconStarsDecor from '@/components/icons/IconStarsDecor.vue'
+import IconSpiralDecor from '@/components/icons/IconSpiralDecor.vue'
+
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 
 const splideOptions = {
@@ -67,8 +69,10 @@ const splideOptions = {
       </Splide>
       <BaseSupportedBy class="hero__supported" />
       <IconSpiralWickDecor class="hero__decor1" :is-animation="true" />
+      <IconSpiralDecor class="hero__decor3" :color="'#CD4631'" />
       <IconStarsDecor class="hero__decor2" :is-animation="true" />
     </BaseContainer>
+    <IconSpiralDecor class="hero__decor3" :color="'#CD4631'" />
   </section>
 </template>
 
@@ -76,6 +80,7 @@ const splideOptions = {
 .hero {
   background-color: var(--champagne);
   overflow: hidden;
+  position: relative;
 
   &__container {
     position: relative;
@@ -114,10 +119,17 @@ const splideOptions = {
     top: -60px;
     left: -428px;
   }
+
   &__decor2 {
     position: absolute;
     top: 105px;
     right: -64px;
+  }
+
+  &__decor3 {
+    position: absolute;
+    bottom: -75px;
+    right: 50%;
   }
 }
 </style>
