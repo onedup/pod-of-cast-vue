@@ -57,6 +57,7 @@ defineProps({
     color: var(--color-black);
     transition:
       color var(--transition-time) ease,
+      border-color var(--transition-time) ease,
       box-shadow var(--transition-time) ease;
 
     &:active:not(.btn--shadow) {
