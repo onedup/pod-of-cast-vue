@@ -129,7 +129,8 @@ const splideOptions = {
   &__decor3 {
     position: absolute;
     bottom: -75px;
-    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>
